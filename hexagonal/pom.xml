@@ -15,25 +15,6 @@
 
     <modules>
         <module>bom</module>
-        <module>step1</module>
-        <module>step2</module>
-        <module>step3</module>
-        <module>step4</module>
-        <module>step5</module>
-        <module>step6</module>
-        <module>step7</module>
-        <module>step8</module>
-        <module>step9</module>
-        <module>step10</module>
-        <module>step11</module>
-        <module>step12</module>
-        <module>step13</module>
-        <module>step14</module>
-        <module>step15</module>
-        <module>step16</module>
-        <module>step17</module>
-        <module>step18</module>
-        <module>step19</module>
     </modules>
 
     <dependencyManagement>
