@@ -1,0 +1,6 @@
+## Description
+- DTO object associated with a service
+
+## Notes
+- The service is the entry point of the application
+- DTO object as the input parameter for the service
