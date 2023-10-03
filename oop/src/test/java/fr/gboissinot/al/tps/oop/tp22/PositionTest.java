@@ -4,7 +4,7 @@ package fr.gboissinot.al.tps.oop.tp22;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
- class PositionTest {
+class PositionTest {
 
     @Test
     public void the_player_starts_at_a_position_anc_can_move_left() {

@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
- class PlayerTest {
+class PlayerTest {
 
     @Test
-     void the_player_starts_at_a_position_anc_can_move_left() {
+    void the_player_starts_at_a_position_anc_can_move_left() {
         var initialPosition = new Position(10, 20);
         var player = new Player(initialPosition);
         player.moveLeft(4);

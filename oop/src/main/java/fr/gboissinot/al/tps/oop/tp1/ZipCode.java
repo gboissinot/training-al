@@ -6,7 +6,7 @@ import java.util.Objects;
 
 final class ZipCode {
 
-    private static Map<String, ZipCode> _cache = new HashMap<>();
+    private static final Map<String, ZipCode> _cache = new HashMap<>();
 
     private final int digit1;
     private final int digit2;
@@ -38,17 +38,16 @@ final class ZipCode {
         return zipCode;
     }
 
+    public String code() {
+        return String.valueOf(digit1) + digit2 + digit3 + digit4 + digit5;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ZipCode zipCode = (ZipCode) o;
         return digit1 == zipCode.digit1 && digit2 == zipCode.digit2 && digit3 == zipCode.digit3 && digit4 == zipCode.digit4 && digit5 == zipCode.digit5;
-    }
-
-    public String code() {
-        StringBuilder sb = new StringBuilder();
-        return sb.append(digit1).append(digit2).append(digit3).append(digit4).append(digit5).toString();
     }
 
     public String department() {

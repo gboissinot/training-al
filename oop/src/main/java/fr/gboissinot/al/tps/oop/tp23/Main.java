@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        var mailListener= new MailListener();
+        var mailListener = new MailListener();
         var eventDispatcher = new DefaultEventDispatcher(
                 Map.of(PasswordChangedEvent.class, List.of(mailListener))
         );
@@ -18,7 +18,7 @@ public class Main {
         UserRepository userRepository = new InMemoryUserRepository(new HashMap<>());
         userRepository.save(user);
 
-        UserService userService = new UserService(userRepository,eventDispatcher);
+        UserService userService = new UserService(userRepository, eventDispatcher);
 
         userService.changePassword(userId1, "124");
 

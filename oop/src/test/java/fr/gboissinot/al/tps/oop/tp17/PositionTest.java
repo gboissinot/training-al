@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 final class PositionTest {
 
     @Test
-     void it_can_move_to_the_left() {
+    void it_can_move_to_the_left() {
         var position = new Position(10, 20);
         position = position.toTheLeft(4);
         Assertions.assertEquals(new Position(6, 20), position);
     }
 
     @Test
-     void the_player_starts_at_a_position_anc_can_move_left() {
+    void the_player_starts_at_a_position_anc_can_move_left() {
         var initialPosition = new Position(10, 20);
         var player = new Player(initialPosition);
         player.moveLeft(4);
@@ -21,7 +21,7 @@ final class PositionTest {
     }
 
     @Test
-     void it_can_move_to_the_left3() {
+    void it_can_move_to_the_left3() {
         var initialPosition = new Position(10, 20);
         var player = new Player(initialPosition);
         player.moveLeft(4);

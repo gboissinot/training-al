@@ -25,7 +25,7 @@ public class User {
     }
 
     public void changePassword(String newHashedPassword) {
-        this.hashedPassword=newHashedPassword;
+        this.hashedPassword = newHashedPassword;
     }
 
     @Override

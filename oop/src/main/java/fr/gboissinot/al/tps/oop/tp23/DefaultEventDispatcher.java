@@ -12,7 +12,7 @@ public class DefaultEventDispatcher implements EventDispatcher {
     }
 
     @Override
-    public void dispatch(Event event){
+    public void dispatch(Event event) {
         final List<Listener> listeners = listenersMap.get(event.getClass());
         for (Listener listener : listeners) {
             listener.listenTo(event);
