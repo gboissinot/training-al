@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tp15.services;
+package fr.gboissinot.al.tps.oop.tp15.domain.services;
 
 import fr.gboissinot.al.tps.oop.tp15.domain.UserDao;
 import fr.gboissinot.al.tps.oop.tp15.domain.model.User;

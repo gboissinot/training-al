@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tp16.services;
+package fr.gboissinot.al.tps.oop.tp16.domain.services;
 
 import fr.gboissinot.al.tps.oop.tp16.domain.Users;
 import fr.gboissinot.al.tps.oop.tp16.domain.model.User;

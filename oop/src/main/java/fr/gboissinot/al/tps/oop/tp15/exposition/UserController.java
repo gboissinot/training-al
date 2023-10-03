@@ -1,6 +1,6 @@
 package fr.gboissinot.al.tps.oop.tp15.exposition;
 
-import fr.gboissinot.al.tps.oop.tp15.services.UserService;
+import fr.gboissinot.al.tps.oop.tp15.domain.services.UserService;
 
 public final class UserController {
 
@@ -10,7 +10,7 @@ public final class UserController {
         this.userService = userService;
     }
 
-    public void createUser(UserRequest createUserRequest) {
+    public void createUser(CreateUserRequest createUserRequest) {
         //DTO Validation
         if (createUserRequest.lastname == null) {
             throw new IllegalArgumentException("A user lastname is required.");
