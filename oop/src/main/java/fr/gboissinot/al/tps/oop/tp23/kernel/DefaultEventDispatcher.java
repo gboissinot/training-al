@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tp23;
+package fr.gboissinot.al.tps.oop.tp23.kernel;
 
 import java.util.List;
 import java.util.Map;

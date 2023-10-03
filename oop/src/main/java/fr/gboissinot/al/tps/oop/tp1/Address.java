@@ -2,7 +2,7 @@ package fr.gboissinot.al.tps.oop.tp1;
 
 import java.util.Objects;
 
-public final class Address {
+final class Address {
 
     private final String city;
     private final ZipCode zipCode;

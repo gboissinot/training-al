@@ -1,6 +1,6 @@
 package fr.gboissinot.al.tps.oop.tp2;
 
-public interface CommandBus {
+interface CommandBus {
     default void dispatch(Command command) {
         long startime = System.currentTimeMillis();
         execute(command);

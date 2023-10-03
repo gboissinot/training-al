@@ -2,7 +2,7 @@ package fr.gboissinot.al.tps.oop.tp19;
 
 import java.util.Objects;
 
-public class PlayerTookInitialPosition implements Event {
+final class PlayerTookInitialPosition implements Event {
 
     private final Position position;
 

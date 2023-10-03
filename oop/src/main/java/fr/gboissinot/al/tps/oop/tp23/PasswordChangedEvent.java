@@ -1,6 +1,8 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
-public class PasswordChangedEvent implements Event {
+import fr.gboissinot.al.tps.oop.tp23.kernel.Event;
+
+final class PasswordChangedEvent implements Event {
 
     @Override
     public int hashCode() {

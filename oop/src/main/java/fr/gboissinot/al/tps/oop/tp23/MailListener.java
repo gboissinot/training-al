@@ -1,8 +1,10 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
-public class MailListener implements Listener {
+import fr.gboissinot.al.tps.oop.tp23.kernel.Listener;
+
+final class MailListener implements Listener<PasswordChangedEvent> {
     @Override
-    public void listenTo(Event event) {
-        System.out.println("Send email");
+    public void listenTo(PasswordChangedEvent passwordChangedEvent) {
+        System.out.println("[Mail Notification] - Password has changed.");
     }
 }

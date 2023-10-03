@@ -2,7 +2,7 @@ package fr.gboissinot.al.tps.oop.tp19;
 
 import java.util.Objects;
 
-public class PlayerMoved implements Event {
+final class PlayerMoved implements Event {
     private final Position position;
 
     public PlayerMoved(Position position) {

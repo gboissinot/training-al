@@ -1,6 +1,6 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
-public interface UserRepository {
+interface UserRepository {
 
     User getById(UserId id);
 

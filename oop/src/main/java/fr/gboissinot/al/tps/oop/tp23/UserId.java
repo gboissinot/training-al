@@ -1,6 +1,6 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
-public class UserId {
+final class UserId {
 
     private final String id;
 

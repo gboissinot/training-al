@@ -1,10 +1,10 @@
 package fr.gboissinot.al.tps.oop.tp16;
 
+import fr.gboissinot.al.tps.oop.tp16.domain.services.UserService;
 import fr.gboissinot.al.tps.oop.tp16.exposition.ChangeUserRequest;
 import fr.gboissinot.al.tps.oop.tp16.exposition.CreateUserRequest;
 import fr.gboissinot.al.tps.oop.tp16.exposition.UserController;
 import fr.gboissinot.al.tps.oop.tp16.infrastructure.MySQLUsers;
-import fr.gboissinot.al.tps.oop.tp16.domain.services.UserService;
 
 public class Main {
 

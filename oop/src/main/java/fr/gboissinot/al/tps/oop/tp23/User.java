@@ -1,9 +1,9 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
-public class User {
+final class User {
 
-    private UserId id;
-    private String name;
+    private final UserId id;
+    private final String name;
     private String hashedPassword;
 
     public User(UserId id, String name, String hashedPassword) {
@@ -14,14 +14,6 @@ public class User {
 
     public UserId getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getHashedPassword() {
-        return hashedPassword;
     }
 
     public void changePassword(String newHashedPassword) {

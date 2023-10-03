@@ -2,7 +2,7 @@ package fr.gboissinot.al.tps.oop.tp23;
 
 import java.util.Map;
 
-public class InMemoryUserRepository implements UserRepository {
+final class InMemoryUserRepository implements UserRepository {
 
     private final Map<UserId, User> usersMap;
 

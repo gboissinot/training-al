@@ -19,5 +19,4 @@ final class Player {
     public List<Event> recordedEvents() {
         return recordedEvents;
     }
-
 }

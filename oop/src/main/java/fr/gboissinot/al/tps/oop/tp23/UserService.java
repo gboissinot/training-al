@@ -1,6 +1,8 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
-public class UserService {
+import fr.gboissinot.al.tps.oop.tp23.kernel.EventDispatcher;
+
+final class UserService {
 
     private final UserRepository userRepository;
     private final EventDispatcher eventDispatcher;

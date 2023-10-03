@@ -6,7 +6,6 @@ import java.util.List;
 final class Player {
 
     private final List<Event> recordedEvents;
-    private Position readPosition;
 
     public Player(Position intialPosition) {
         this.recordedEvents = new ArrayList<>();
@@ -18,24 +17,16 @@ final class Player {
     }
 
     public Position currentPosition() {
-
+        Position readPosition = null;
         for (Event recordedEvent : recordedEvents) {
             if (recordedEvent instanceof PlayerTookInitialPosition) {
-                whenPlayerTookPosition((PlayerTookInitialPosition) recordedEvent);
+                readPosition = ((PlayerTookInitialPosition) recordedEvent).getPosition();
             }
             if (recordedEvent instanceof PlayerMoved) {
-                whenPlayerMoved((PlayerMoved) recordedEvent);
+                readPosition.toTheLeft(((PlayerMoved) recordedEvent).getX());
             }
         }
 
         return readPosition;
-    }
-
-    private void whenPlayerTookPosition(PlayerTookInitialPosition event) {
-        readPosition = event.getPosition();
-    }
-
-    private void whenPlayerMoved(PlayerMoved playerMoved) {
-        readPosition = readPosition.toTheLeft(playerMoved.getX());
     }
 }

@@ -1,5 +1,6 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
+import fr.gboissinot.al.tps.oop.tp23.kernel.EventDispatcher;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;

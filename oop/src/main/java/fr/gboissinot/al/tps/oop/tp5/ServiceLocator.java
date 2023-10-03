@@ -4,7 +4,7 @@ import fr.gboissinot.al.tps.oop.tp3.Logger;
 
 import java.util.Map;
 
-public final class ServiceLocator {
+final class ServiceLocator {
 
     private static final Map<String, Object> _registry = Map.of(
             "logger", new FileLogger()

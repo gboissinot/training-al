@@ -1,5 +1,7 @@
 package fr.gboissinot.al.tps.oop.tp23;
 
+import fr.gboissinot.al.tps.oop.tp23.kernel.DefaultEventDispatcher;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

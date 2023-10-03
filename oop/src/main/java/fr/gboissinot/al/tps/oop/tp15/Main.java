@@ -1,9 +1,9 @@
 package fr.gboissinot.al.tps.oop.tp15;
 
-import fr.gboissinot.al.tps.oop.tp15.exposition.UserController;
-import fr.gboissinot.al.tps.oop.tp15.exposition.CreateUserRequest;
-import fr.gboissinot.al.tps.oop.tp15.infrastructure.MySQLUserDao;
 import fr.gboissinot.al.tps.oop.tp15.domain.services.UserService;
+import fr.gboissinot.al.tps.oop.tp15.exposition.CreateUserRequest;
+import fr.gboissinot.al.tps.oop.tp15.exposition.UserController;
+import fr.gboissinot.al.tps.oop.tp15.infrastructure.MySQLUserDao;
 
 public class Main {
 
