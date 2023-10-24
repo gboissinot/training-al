@@ -1,5 +1,5 @@
 ## Description
-- Builder pattern illustration
+- First invariant illustration
 
 ## Notes
-- Implementation is conform to the immutability principle
+- Invariants are checked at the creation in the constructor
