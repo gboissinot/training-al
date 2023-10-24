@@ -1,6 +1,5 @@
 ## Description
-- ServiceLocation implementation examples
+- Factory illustration with a file logger
 
 ## Notes
-- ServiceLocator use a key as identifier
-- ServiceLocatorSingleton is not finalized
+

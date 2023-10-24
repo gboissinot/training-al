@@ -8,8 +8,5 @@ public class Main {
 
         var myService = new MyService(logger);
         myService.myMethod();
-
-        var myOtherService = new MyOtherService(logger);
-        myOtherService.otherServiceMethod();
     }
 }
