@@ -9,7 +9,7 @@ final class RightQueryBuilder implements QueryBuilder{
     private String where;
     private String orderBy;
 
-    public static RightQueryBuilder create() {
+    public static QueryBuilder create() {
         return new RightQueryBuilder();
     }
 

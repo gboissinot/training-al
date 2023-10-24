@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tpCorrectionUser;
+package fr.gboissinot.al.tps.oop.live.tpCorrectionUser;
 
 public class DatabaseUserRegistry implements UserRegistry {
     @Override

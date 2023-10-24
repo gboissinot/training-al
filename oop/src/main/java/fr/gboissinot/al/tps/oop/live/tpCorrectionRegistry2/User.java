@@ -1,28 +1,30 @@
-package fr.gboissinot.al.tps.oop.tpCorrectionUser;
+package fr.gboissinot.al.tps.oop.live.tpCorrectionRegistry2;
 
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.UUID;
 
-public class User {
+final class User {
 
-    private static final AtomicInteger counter = new AtomicInteger(0);
-
-    private final int id;
+    private final String id;
     private final String firstname;
     private final String lastname;
 
-    private User(int id, String firstname, String lastname) {
+    private User(String id, String firstname, String lastname) {
         this.id = id;
         this.firstname = Objects.requireNonNull(firstname);
         this.lastname = Objects.requireNonNull(lastname);
     }
 
-    public static User of(String firstname, String lastname) {
-        return new User(counter.incrementAndGet(), firstname, lastname);
+    public String getId() {
+        return id;
     }
 
-    public int getId() {
-        return id;
+    public static User of(String firstname, String lastname) {
+        return new User(UUID.randomUUID().toString(), firstname, lastname);
+    }
+
+    public static User of(String id, String firstname, String lastname) {
+        return new User(id, firstname, lastname);
     }
 
     @Override
@@ -30,7 +32,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && Objects.equals(firstname, user.firstname) && Objects.equals(lastname, user.lastname);
+        return Objects.equals(id, user.id) && Objects.equals(firstname, user.firstname) && Objects.equals(lastname, user.lastname);
     }
 
     @Override
@@ -41,7 +43,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 '}';

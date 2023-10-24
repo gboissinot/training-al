@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tpCorrectionUser;
+package fr.gboissinot.al.tps.oop.live.tpCorrectionUser;
 
 import java.util.HashMap;
 import java.util.Map;

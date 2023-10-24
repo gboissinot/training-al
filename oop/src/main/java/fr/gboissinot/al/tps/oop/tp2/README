@@ -1,8 +1,8 @@
 ## Description
-- First polymorphism implementation
+- Dependency injection illustration
 
 ## Notes
-- The bar() method can change among the Foo implementation
-- A functional interface has only one method
-- An implementation of a functional interface can be replaced by a lambda (just sugar code)
-- Foo and CommandBus are two functional interfaces
+- MyService is a service object with a logger as a dependency
+- ServiceLocator pattern enable to locate objects : it has been deprecated by dependency injection
+- A Logger endpoint with multiple implementations : NullLogger, DefaultLogger, MySecondLogger
+- NullLogger is called a dummy object

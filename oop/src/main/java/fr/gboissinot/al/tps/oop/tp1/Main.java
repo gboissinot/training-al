@@ -5,10 +5,9 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(ZipCode.of("94140").code());
+        var zipCode1 = ZipCode.of("94140");
+        var zipCode2 = ZipCode.of("94140");
 
-        ZipCode zipCode1 = ZipCode.of("94140");
-        ZipCode zipCode2 = ZipCode.of("94140");
         System.out.println(zipCode1 == zipCode2);
         System.out.println(zipCode1.equals(zipCode2));
 

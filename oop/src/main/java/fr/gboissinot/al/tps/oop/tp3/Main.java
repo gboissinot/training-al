@@ -7,6 +7,6 @@ public class Main {
         };
 
         var myService = new MyService(logger);
-        myService.myMethod();
+        myService.doSomething();
     }
 }

@@ -2,4 +2,6 @@
 - Factory illustration with a file logger
 
 ## Notes
-
+- Logger is the extension point
+- FileLogger is the file logger implementation
+- The environment creation of the file logger is externalized into the LoggerFactory

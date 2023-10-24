@@ -9,7 +9,7 @@ final class WrongQueryBuilder implements QueryBuilder {
     private String where;
     private String orderBy;
 
-    public static WrongQueryBuilder create() {
+    public static QueryBuilder create() {
         return new WrongQueryBuilder();
     }
 
@@ -20,7 +20,7 @@ final class WrongQueryBuilder implements QueryBuilder {
     }
 
     @Override
-    public WrongQueryBuilder from(String from) {
+    public QueryBuilder from(String from) {
         this.from = Objects.requireNonNull(from);
         return this;
     }

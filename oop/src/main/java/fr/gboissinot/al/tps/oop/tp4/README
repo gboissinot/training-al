@@ -5,3 +5,4 @@
 - Logger and Formatter are functional interfaces
 - FileLogger is a first implementation (not optimized)
 - Default or normal implementation can be named "Default"
+- NullLogger is called a dummy object
