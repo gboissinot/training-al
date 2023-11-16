@@ -5,4 +5,4 @@
 - The controller is the entry point
 - A unique repository for the Root entity User
 - The repository uses the DIP pattern with its MySQLUsers implementation
-- The repository is named with the plural
+- The repository is named with plural

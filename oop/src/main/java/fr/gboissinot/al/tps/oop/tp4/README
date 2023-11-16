@@ -1,8 +1,8 @@
 ## Description
-- Complete polymorphism and dependency injection illustration
+-  Polymorphism and dependency injection illustration
 
 ## Notes
 - Logger and Formatter are functional interfaces
 - FileLogger is a first implementation (not optimized)
-- Default or normal implementation can be named "Default"
+- Default or normal implementation can be prefixed with "Default"
 - NullLogger is called a dummy object

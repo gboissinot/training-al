@@ -4,4 +4,4 @@
 ## Notes
 - Each command generates an event
 - The initial position is materialized with PlayerTookInitialPosition event
-- We take in consideration the initial event position when we test the object
+- We take into consideration the initial event position for testing object

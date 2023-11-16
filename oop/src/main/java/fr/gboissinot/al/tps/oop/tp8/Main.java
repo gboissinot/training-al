@@ -3,16 +3,17 @@ package fr.gboissinot.al.tps.oop.tp8;
 public class Main {
 
     public static void main(String[] args) {
-        //With right builder implementation
-        System.out.println("With right implementations...");
-        build_queries_from_builders(RightQueryBuilder.create());
 
         //With wrong builder implementation
-        System.out.println("\nWith wrong implementations...");
-        build_queries_from_builders(WrongQueryBuilder.create());
+        System.out.println("With wrong implementations...");
+        buildQueriesFromBuilders(WrongQueryBuilder.create());
+
+        //With right builder implementation
+        System.out.println("\nWith right implementations...");
+        buildQueriesFromBuilders(RightQueryBuilder.create());
     }
 
-    private static void build_queries_from_builders(QueryBuilder queryBuilder) {
+    private static void buildQueriesFromBuilders(QueryBuilder queryBuilder) {
         var query1 = queryBuilder
                 .select("SELECT ID, NAME")
                 .from("T_USERS")
