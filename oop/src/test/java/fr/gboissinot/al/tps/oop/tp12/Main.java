@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args) {
         Colis colis = Colis.create(ColisNumber.of(123));
         colis.deliver();
-        final Status colisStatusy = colis.getStatus();
-        System.out.println(colisStatusy);
+        System.out.println(colis);
     }
 }

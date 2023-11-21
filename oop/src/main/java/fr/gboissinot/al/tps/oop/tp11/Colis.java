@@ -26,7 +26,7 @@ final class Colis {
 
     public void cancel() {
         if (this.status != ColisStatus.IN_PREPARATION) {
-            throw new IllegalStateException("Can't cancel a colis in preparation");
+            throw new IllegalStateException("Can't cancel a package in preparation");
         }
         this.status = ColisStatus.CANCELED;
     }

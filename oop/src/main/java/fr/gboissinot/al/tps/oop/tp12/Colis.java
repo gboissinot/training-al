@@ -7,31 +7,31 @@ final class Colis {
 
     private final ColisNumber number;
     private final LocalDateTime createdDate;
-    private Status status;
+    private ColisStatus status;
 
-    private Colis(ColisNumber number, LocalDateTime createdDate, ColisStatus colisStatus) {
+    private Colis(ColisNumber number, LocalDateTime createdDate, Status status) {
         this.number = number;
         this.createdDate = createdDate;
-        this.status = new Status();
-        this.status.add(colisStatus);
+        this.status = new ColisStatus();
+        this.status.add(status);
     }
 
     public static Colis create(ColisNumber number) {
-        return new Colis(number, LocalDateTime.now(), ColisStatus.IN_PREPARATION);
+        return new Colis(number, LocalDateTime.now(), Status.IN_PREPARATION);
     }
 
     public void deliver() {
-        this.status.add(ColisStatus.DELIVERED);
+        this.status.add(Status.DELIVERED);
     }
 
     public void cancel() {
-        if (this.status.value() != ColisStatus.IN_PREPARATION) {
+        if (this.status.value() != Status.IN_PREPARATION) {
             throw new IllegalStateException("Can't cancel a package into preparation");
         }
-        this.status.add(ColisStatus.CANCELED);
+        this.status.add(Status.CANCELED);
     }
 
-    public Status getStatus() {
+    public ColisStatus getStatus() {
         return status;
     }
 
