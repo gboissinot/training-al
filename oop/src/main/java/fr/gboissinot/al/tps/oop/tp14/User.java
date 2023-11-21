@@ -2,6 +2,7 @@ package fr.gboissinot.al.tps.oop.tp14;
 
 import java.util.Objects;
 
+//Entity
 final class User {
 
     private final String id;

@@ -24,6 +24,7 @@ public final class MySQLUsers implements Users {
 
     @Override
     public User getById(String id) {
+        //TODO Implement me
         throw new UnsupportedOperationException();
     }
 }

@@ -5,13 +5,17 @@ import java.util.Objects;
 public final class User {
 
     private final String id;
-    private final String lastname;
+    private String lastname;
     private final String firstname;
 
     public User(String id, String lastname, String firstname) {
         this.id = id;
         this.lastname = lastname;
         this.firstname = firstname;
+    }
+
+    public void changeLastName(String newLastName) {
+        this.lastname = newLastName;
     }
 
     @Override

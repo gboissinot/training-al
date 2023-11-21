@@ -17,4 +17,8 @@ public final class UserController {
         }
         userService.create(createUserRequest.lastname, createUserRequest.firstname);
     }
+
+    public void changeLastName(ChangeUserRequest userRequest) {
+        userService.changeUser(userRequest.id, userRequest.newLastName);
+    }
 }

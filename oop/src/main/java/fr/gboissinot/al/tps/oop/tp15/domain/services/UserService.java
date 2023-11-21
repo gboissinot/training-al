@@ -17,4 +17,10 @@ public final class UserService {
         var user = new User(UUID.randomUUID().toString(), lastname, firstname);
         userPersistence.save(user);
     }
+
+    public void changeUser(String userId, String newLastName) {
+        var user = userPersistence.getById(userId);
+        user.changeLastName(newLastName);
+        userPersistence.save(user);
+    }
 }

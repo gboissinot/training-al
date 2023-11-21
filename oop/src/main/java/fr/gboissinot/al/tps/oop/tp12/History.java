@@ -30,7 +30,7 @@ final class History {
 
     public Status getLatest() {
         if (history.size() == 0) {
-            throw new UnsupportedOperationException();
+            throw new IllegalStateException();
         }
         return history.get(history.size() - 1);
     }
