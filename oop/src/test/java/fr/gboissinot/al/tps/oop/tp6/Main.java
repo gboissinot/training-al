@@ -3,7 +3,7 @@ package fr.gboissinot.al.tps.oop.tp6;
 public class Main {
 
     public static void main(String[] args) {
-        var userRegistry = new InMemoryUserRegistry();
+        var userRegistry = new InMemoryUserRepository();
         var userService = new UserService(userRegistry);
         var user = User.of("BOISSINOT", "GREGORY");
         userService.register(user);

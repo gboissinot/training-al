@@ -3,7 +3,7 @@ package fr.gboissinot.al.tps.oop.tp6;
 import java.util.HashMap;
 import java.util.Map;
 
-final class InMemoryUserRegistry implements UserRegistry {
+final class InMemoryUserRepository implements UserRepository {
 
     private final Map<String, User> users = new HashMap<>();
 

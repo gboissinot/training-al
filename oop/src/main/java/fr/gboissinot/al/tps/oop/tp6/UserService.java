@@ -2,17 +2,17 @@ package fr.gboissinot.al.tps.oop.tp6;
 
 final class UserService {
 
-    private final UserRegistry userRegistry;
+    private final UserRepository userRepository;
 
-    public UserService(UserRegistry userRegistry) {
-        this.userRegistry = userRegistry;
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     public User get(User user) {
-        return userRegistry.getById(user.getId());
+        return userRepository.getById(user.getId());
     }
 
     public void register(User user) {
-        userRegistry.save(user);
+        userRepository.save(user);
     }
 }

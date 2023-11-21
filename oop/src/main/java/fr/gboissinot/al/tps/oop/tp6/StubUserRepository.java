@@ -2,7 +2,7 @@ package fr.gboissinot.al.tps.oop.tp6;
 
 import java.util.Map;
 
-final class StubUserRegistry implements UserRegistry {
+final class StubUserRepository implements UserRepository {
 
     private Map<String, User> myData = Map.of(
             "1", User.of("BOISSINOT", "GREGORY"),
