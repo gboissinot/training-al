@@ -4,10 +4,12 @@ import java.util.Objects;
 
 final class User {
 
+    private final String id;
     private final String lastname;
     private final String firstname;
 
-    public User(String lastname, String firstname) {
+    public User(String id, String lastname, String firstname) {
+        this.id = id;
         this.lastname = lastname;
         this.firstname = firstname;
     }
@@ -17,18 +19,19 @@ final class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(lastname, user.lastname) && Objects.equals(firstname, user.firstname);
+        return Objects.equals(id, user.id) && Objects.equals(lastname, user.lastname) && Objects.equals(firstname, user.firstname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(lastname, firstname);
+        return Objects.hash(id, lastname, firstname);
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "lastname='" + lastname + '\'' +
+                "id='" + id + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", firstname='" + firstname + '\'' +
                 '}';
     }

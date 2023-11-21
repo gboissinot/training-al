@@ -12,7 +12,8 @@ public final class UserService {
     }
 
     public void create(String lastname, String firstname) {
-        User user = new User(lastname, lastname, firstname);
+        var userId = users.nextId();
+        var user = new User(userId, lastname, firstname);
         users.add(user);
     }
 
