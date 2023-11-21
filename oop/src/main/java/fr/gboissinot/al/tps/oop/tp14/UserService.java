@@ -2,14 +2,14 @@ package fr.gboissinot.al.tps.oop.tp14;
 
 final class UserService {
 
-    private final UserDao userDao;
+    private final UserPersistence userPersistence;
 
-    public UserService(UserDao userDao) {
-        this.userDao = userDao;
+    public UserService(UserPersistence userPersistence) {
+        this.userPersistence = userPersistence;
     }
 
     void create(CreateUserRequest createUserRequest) {
         User user = new User(createUserRequest.lastname, createUserRequest.firstname);
-        userDao.create(user);
+        userPersistence.create(user);
     }
 }

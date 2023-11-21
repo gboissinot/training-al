@@ -7,41 +7,38 @@ final class Colis {
 
     private final ColisNumber number;
     private final LocalDateTime createdDate;
-    private ColisStatus status;
-    private History history;
+    private Status status;
 
-    private Colis(ColisNumber number, LocalDateTime createdDate, ColisStatus status, History history) {
+    private Colis(ColisNumber number, LocalDateTime createdDate, ColisStatus colisStatus) {
         this.number = number;
         this.createdDate = createdDate;
-        this.status = status;
-        this.history = history;
+        this.status = new Status();
+        this.status.add(colisStatus);
     }
 
     public static Colis create(ColisNumber number) {
-        return new Colis(number, LocalDateTime.now(), ColisStatus.IN_PREPARATION, History.create(ColisStatus.IN_PREPARATION));
-    }
-
-    public History history() {
-        return history;
+        return new Colis(number, LocalDateTime.now(), ColisStatus.IN_PREPARATION);
     }
 
     public void deliver() {
-        this.status = ColisStatus.DELIVERED;
-        this.history = this.history.add(ColisStatus.DELIVERED);
+        this.status.add(ColisStatus.DELIVERED);
     }
 
     public void cancel() {
-        if (this.status != ColisStatus.IN_PREPARATION) {
+        if (this.status.value() != ColisStatus.IN_PREPARATION) {
             throw new IllegalStateException("Can't cancel a package into preparation");
         }
-        this.status = ColisStatus.CANCELED;
-        this.history = this.history.add(ColisStatus.CANCELED);
+        this.status.add(ColisStatus.CANCELED);
+    }
+
+    public Status getStatus() {
+        return status;
     }
 
     @Override
     public String toString() {
         return "Colis{" +
-                "number='" + number + '\'' +
+                "number=" + number +
                 ", createdDate=" + createdDate +
                 ", status=" + status +
                 '}';

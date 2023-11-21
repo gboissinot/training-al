@@ -12,6 +12,10 @@ final class History {
         this.history = history;
     }
 
+    public static History create() {
+        return new History(new ArrayList<>());
+    }
+
     public static History create(ColisStatus initialStatus) {
         final ArrayList<ColisStatus> list = new ArrayList<>();
         list.add(initialStatus);
@@ -22,6 +26,13 @@ final class History {
         List<ColisStatus> statusList = new ArrayList<>(history);
         statusList.add(status);
         return new History(statusList);
+    }
+
+    public ColisStatus getLatest() {
+        if (history.size() == 0) {
+            throw new UnsupportedOperationException();
+        }
+        return history.get(history.size() - 1);
     }
 
     @Override

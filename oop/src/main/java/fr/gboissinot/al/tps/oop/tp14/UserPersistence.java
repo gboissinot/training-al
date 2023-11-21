@@ -1,5 +1,5 @@
 package fr.gboissinot.al.tps.oop.tp14;
 
-interface UserDao {
+interface UserPersistence {
     void create(User user);
 }

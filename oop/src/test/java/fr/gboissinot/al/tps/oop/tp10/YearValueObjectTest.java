@@ -3,7 +3,7 @@ package fr.gboissinot.al.tps.oop.tp10;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class YearTest {
+class YearValueObjectTest {
 
     @Test
     void test() {
