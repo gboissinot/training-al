@@ -3,8 +3,8 @@ package fr.gboissinot.al.tps.oop.tp22;
 import java.util.Objects;
 
 final class Position {
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     public Position(int x, int y) {
         this.x = x;

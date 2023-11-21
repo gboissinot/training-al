@@ -1,6 +1,7 @@
 ## Description
-- ServiceLocation implementation examples
+- Factory pattern illustration with a file logger
 
 ## Notes
-- ServiceLocator use a key as identifier
-- ServiceLocatorSingleton is not finalized
+- Logger is an extension point
+- FileLogger is a file logger implementation
+- The environment creation of the file logger is externalized into the LoggerFactory

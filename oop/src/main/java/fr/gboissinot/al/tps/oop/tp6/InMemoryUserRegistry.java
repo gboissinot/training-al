@@ -5,7 +5,7 @@ import java.util.Map;
 
 final class InMemoryUserRegistry implements UserRegistry {
 
-    private final Map<String, User> users = new HashMap();
+    private final Map<String, User> users = new HashMap<>();
 
     @Override
     public User getById(String id) {

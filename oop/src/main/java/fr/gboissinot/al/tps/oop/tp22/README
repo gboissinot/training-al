@@ -3,5 +3,5 @@
 
 ## Notes
 - Player object uses only events
-- PlayerReport is introduced and is responsible to the read model
+- Player Report is introduced with a read model responsibility
 - Position object becomes a collaborator object to the PlayerReport

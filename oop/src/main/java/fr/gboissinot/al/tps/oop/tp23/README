@@ -1,0 +1,6 @@
+## Description
+- User Password use case change with event notification
+
+## Notes
+- changePassword is the primary task
+- email notification is the second task

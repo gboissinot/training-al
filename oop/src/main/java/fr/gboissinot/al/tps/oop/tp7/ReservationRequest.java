@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tp8;
+package fr.gboissinot.al.tps.oop.tp7;
 
 final class ReservationRequest {
 

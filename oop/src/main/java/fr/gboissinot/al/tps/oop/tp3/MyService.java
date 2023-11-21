@@ -8,12 +8,8 @@ final class MyService {
         this.logger = logger;
     }
 
-    public void myMethod() {
-        //var logger = ServiceLocator.getLogger();
+    public void doSomething() {
         logger.log("Processing in myMethod");
-        doProcess();
-    }
-
-    private void doProcess() {
+        //do something
     }
 }

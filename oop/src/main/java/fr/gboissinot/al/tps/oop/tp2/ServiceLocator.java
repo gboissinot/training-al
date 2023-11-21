@@ -1,9 +1,9 @@
-package fr.gboissinot.al.tps.oop.tp3;
+package fr.gboissinot.al.tps.oop.tp2;
 
 import java.util.Map;
 
-@Deprecated
-public class ServiceLocator {
+@SuppressWarnings("unused")
+final class ServiceLocator {
 
     private static final Map<String, Object> _registry = Map.of(
             "LOG1", new DefaultLogger(),

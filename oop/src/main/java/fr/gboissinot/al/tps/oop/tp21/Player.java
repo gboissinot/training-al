@@ -17,13 +17,13 @@ final class Player {
     }
 
     public Position currentPosition() {
-        Position readPosition = null;
+        Position readPosition = new Position(0, 0);
         for (Event recordedEvent : recordedEvents) {
             if (recordedEvent instanceof PlayerTookInitialPosition) {
                 readPosition = ((PlayerTookInitialPosition) recordedEvent).getPosition();
             }
             if (recordedEvent instanceof PlayerMoved) {
-                readPosition.toTheLeft(((PlayerMoved) recordedEvent).getX());
+                readPosition = readPosition.toTheLeft(((PlayerMoved) recordedEvent).getX());
             }
         }
 

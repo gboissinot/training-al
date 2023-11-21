@@ -1,4 +1,4 @@
-package fr.gboissinot.al.tps.oop.tp7;
+package fr.gboissinot.al.tps.oop.tp8;
 
 final class Query {
 

@@ -2,5 +2,5 @@
 - Complete event implementation
 
 ## Notes
-- Player object uses only events
-- PlayerMoved state doesn't contains the Position object
+- Player class uses only events
+- PlayerMoved event class doesn't refer to the Position object
