@@ -10,6 +10,6 @@ final class UserService {
 
     void create(CreateUserRequest createUserRequest) {
         User user = new User(createUserRequest.lastname, createUserRequest.firstname);
-        userPersistence.create(user);
+        userPersistence.save(user);
     }
 }
