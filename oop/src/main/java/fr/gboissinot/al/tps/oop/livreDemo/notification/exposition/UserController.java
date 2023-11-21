@@ -1,6 +1,6 @@
-package fr.gboissinot.al.tps.oop.tp16.exposition;
+package fr.gboissinot.al.tps.oop.livreDemo.notification.exposition;
 
-import fr.gboissinot.al.tps.oop.tp16.domain.services.UserService;
+import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.services.UserService;
 
 public final class UserController {
 
@@ -20,7 +20,7 @@ public final class UserController {
             throw new IllegalArgumentException("A user firstname is required.");
         }
 
-        userService.create(createUserRequest.lastname, createUserRequest.firstname);
+        userService.create(createUserRequest.lastname, createUserRequest.firstname, createUserRequest.email);
     }
 
     public void changeLastName(ChangeUserRequest changeUserRequest) {

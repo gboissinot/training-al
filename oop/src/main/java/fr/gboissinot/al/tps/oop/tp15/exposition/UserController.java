@@ -15,10 +15,23 @@ public final class UserController {
         if (createUserRequest.lastname == null) {
             throw new IllegalArgumentException("A user lastname is required.");
         }
+
+        if (createUserRequest.firstname == null) {
+            throw new IllegalArgumentException("A user firstname is required.");
+        }
+
         userService.create(createUserRequest.lastname, createUserRequest.firstname);
     }
 
-    public void changeLastName(ChangeUserRequest userRequest) {
-        userService.changeUser(userRequest.id, userRequest.newLastName);
+    public void changeLastName(ChangeUserRequest changeUserRequest) {
+        if (changeUserRequest.id == null) {
+            throw new IllegalArgumentException("A user identifier is required.");
+        }
+
+        if (changeUserRequest.newLastName == null) {
+            throw new IllegalArgumentException("The new lastname is required.");
+        }
+
+        userService.changeUser(changeUserRequest.id, changeUserRequest.newLastName);
     }
 }

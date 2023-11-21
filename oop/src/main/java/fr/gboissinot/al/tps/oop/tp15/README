@@ -3,5 +3,5 @@
 
 ## Notes
 - The controller is the entry point of the application
-- DTO object and the associated controller are presentation objects, in the exposition package
+- DTO objects and the associated controller are presentation objects, in the exposition package
 - The controller has the responsibility to validate input data with the DTO content
