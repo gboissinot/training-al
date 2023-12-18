@@ -3,6 +3,7 @@ package fr.gboissinot.al.tps.oop.livreDemo.notification.infrastructure;
 import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.Notifications;
 import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.model.User;
 
+//Infrastructure service implementation
 public class EmailNotifications implements Notifications {
 
     private final EmailLogGateway emailLogGateway;

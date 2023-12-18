@@ -5,6 +5,7 @@ import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.Users;
 import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.model.Email;
 import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.model.User;
 
+//Application service
 public final class UserService {
 
     private final Users users;

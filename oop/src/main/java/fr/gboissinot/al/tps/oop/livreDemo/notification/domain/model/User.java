@@ -2,6 +2,7 @@ package fr.gboissinot.al.tps.oop.livreDemo.notification.domain.model;
 
 import java.util.Objects;
 
+//Entity
 public final class User {
 
     private final String id;

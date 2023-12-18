@@ -1,6 +1,6 @@
 package fr.gboissinot.al.tps.oop.livreDemo.notification.exposition;
 
-//DTO Object
+//DTO
 public final class CreateUserRequest {
 
     public final String lastname;

@@ -1,5 +1,7 @@
 package fr.gboissinot.al.tps.oop.livreDemo.notification.domain.model;
 
+
+//VO
 public final class Email {
     private final String email;
 

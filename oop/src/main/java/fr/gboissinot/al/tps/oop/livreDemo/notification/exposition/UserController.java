@@ -2,6 +2,7 @@ package fr.gboissinot.al.tps.oop.livreDemo.notification.exposition;
 
 import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.services.UserService;
 
+//Controller
 public final class UserController {
 
     private final UserService userService;

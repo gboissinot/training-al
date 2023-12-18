@@ -5,6 +5,7 @@ import fr.gboissinot.al.tps.oop.livreDemo.notification.domain.model.User;
 
 import java.util.UUID;
 
+//Repository implementation
 public final class MySQLUsers implements Users {
 
     @Override
