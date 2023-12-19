@@ -10,7 +10,7 @@ public class Service {
         this.persistence = persistence;
     }
 
-    public void myMethod(){
+    public void myMethod() {
         persistence.m();
     }
 }

@@ -7,8 +7,8 @@ public final class User {
 
     private final String id;
     private final String firstname;
-    private String lastname;
     private final Email email;
+    private String lastname;
 
     public User(String id, String lastname, String firstname, Email email) {
         this.id = id;

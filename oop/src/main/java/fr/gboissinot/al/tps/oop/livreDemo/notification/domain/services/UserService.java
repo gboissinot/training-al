@@ -18,7 +18,7 @@ public final class UserService {
 
     public void create(String lastname, String firstname, String email) {
         var userId = users.nextId();
-        var user = new User(userId, lastname, firstname,  Email.of(email));
+        var user = new User(userId, lastname, firstname, Email.of(email));
         users.add(user);
         notifications.send(user);
     }
