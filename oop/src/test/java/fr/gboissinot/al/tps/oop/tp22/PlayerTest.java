@@ -1,10 +1,9 @@
 package fr.gboissinot.al.tps.oop.tp22;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class PositionTest {
+class PlayerTest {
 
     @Test
     public void the_player_starts_at_a_position_anc_can_move_left() {
@@ -15,6 +14,4 @@ class PositionTest {
         Assertions.assertEquals(new Position(5, 20)
                 , player.playerReport().currentPosition());
     }
-
-
 }

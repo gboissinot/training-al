@@ -17,7 +17,5 @@ public class Main {
 
         final String value = zipCodeMap.get(ZipCode.of("94140"));
         System.out.println(value);
-
-
     }
 }

@@ -11,22 +11,4 @@ final class PositionTest {
         position = position.toTheLeft(4);
         Assertions.assertEquals(new Position(6, 20), position);
     }
-
-    @Test
-    void the_player_starts_at_a_position_anc_can_move_left() {
-        var initialPosition = new Position(10, 20);
-        var player = new Player(initialPosition);
-        player.moveLeft(4);
-        Assertions.assertEquals(new Position(6, 20), player.currentPosition());
-    }
-
-    @Test
-    void it_can_move_to_the_left3() {
-        var initialPosition = new Position(10, 20);
-        var player = new Player(initialPosition);
-        player.moveLeft(4);
-        Assertions.assertEquals(new Player(new Position(6, 20)), player);
-    }
-
-
 }

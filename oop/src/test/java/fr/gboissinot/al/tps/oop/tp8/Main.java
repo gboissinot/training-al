@@ -28,6 +28,4 @@ public class Main {
         System.out.println(query1);
         System.out.println(query2);
     }
-
-
 }

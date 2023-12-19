@@ -15,7 +15,5 @@ public class Main {
 
         final ChangeUserRequest changeUserRequest = new ChangeUserRequest("BOISSINOT", "NEW NAME");
         userController.changeLastName(changeUserRequest);
-
-
     }
 }

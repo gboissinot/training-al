@@ -1,6 +1,6 @@
 package fr.gboissinot.al.tps.oop.tp16.exposition;
 
-//DTO
+//DTO Object
 public final class ChangeUserRequest {
 
     public final String id;

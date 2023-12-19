@@ -21,6 +21,4 @@ class PlayerTest {
     private boolean assertContains(List<Event> events, Event targetEvent) {
         return events.contains(targetEvent);
     }
-
-
 }

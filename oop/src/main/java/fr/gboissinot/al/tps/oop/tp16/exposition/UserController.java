@@ -2,6 +2,7 @@ package fr.gboissinot.al.tps.oop.tp16.exposition;
 
 import fr.gboissinot.al.tps.oop.tp16.domain.services.UserService;
 
+//Controller
 public final class UserController {
 
     private final UserService userService;

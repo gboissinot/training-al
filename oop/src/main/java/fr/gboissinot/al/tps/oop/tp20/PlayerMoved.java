@@ -3,6 +3,7 @@ package fr.gboissinot.al.tps.oop.tp20;
 import java.util.Objects;
 
 final class PlayerMoved implements Event {
+
     private final int x;
     private final int y;
 
