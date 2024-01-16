@@ -23,7 +23,7 @@ public final class CreateAccountService implements CreateAccountUseCase {
         var accountId = createAccountPort.nextId();
         var account = new Account(accountId, Money.of(command.initialMoney));
         createAccountPort.save(account);
-        throw AccountException.notFoundAccountId(AccountId.of(UUID.randomUUID()));
-        //return accountId.value();
+        //throw AccountException.notFoundAccountId(AccountId.of(UUID.randomUUID()));
+        return accountId.value();
     }
 }
