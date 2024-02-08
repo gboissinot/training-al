@@ -1,16 +1,16 @@
 package fr.gboissinot.al.tps.oop.tp12;
 
 //VO ID
-final class ColisNumber {
+final class ColisId {
 
     private final String value;
 
-    private ColisNumber(String value) {
+    private ColisId(String value) {
         this.value = value;
     }
 
-    public static ColisNumber of(long value) {
-        return new ColisNumber("#COLIS" + value);
+    public static ColisId of(long value) {
+        return new ColisId("#COLIS" + value);
     }
 
     @Override

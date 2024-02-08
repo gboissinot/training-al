@@ -5,18 +5,18 @@ import java.time.LocalDateTime;
 //Entity
 final class Colis {
 
-    private final ColisNumber number;
+    private final ColisId id;
     private final LocalDateTime createdDate;
     private ColisStatus status;
 
-    private Colis(ColisNumber number, LocalDateTime createdDate, Status status) {
-        this.number = number;
+    private Colis(ColisId id, LocalDateTime createdDate, Status status) {
+        this.id = id;
         this.createdDate = createdDate;
         this.status = new ColisStatus();
         this.status.add(status);
     }
 
-    public static Colis create(ColisNumber number) {
+    public static Colis create(ColisId number) {
         return new Colis(number, LocalDateTime.now(), Status.IN_PREPARATION);
     }
 
@@ -38,7 +38,7 @@ final class Colis {
     @Override
     public String toString() {
         return "Colis{" +
-                "number=" + number +
+                "id=" + id +
                 ", createdDate=" + createdDate +
                 ", status=" + status +
                 '}';

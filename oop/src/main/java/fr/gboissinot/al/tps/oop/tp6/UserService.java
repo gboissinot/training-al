@@ -4,18 +4,18 @@ package fr.gboissinot.al.tps.oop.tp6;
 final class UserService {
 
     //Use of DIP pattern
-    private final UserRepository userRepository;
+    private final UserPersistence userPersistence;
 
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public UserService(UserPersistence userPersistence) {
+        this.userPersistence = userPersistence;
     }
 
     public User get(User user) {
-        return userRepository.getById(user.getId());
+        return userPersistence.getById(user.getId());
     }
 
     //Registration Use case
-    public void register(User user) {
-        userRepository.save(user);
+    public void create(User user) {
+        userPersistence.save(user);
     }
 }

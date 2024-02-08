@@ -47,7 +47,7 @@ final class Colis {
     @Override
     public String toString() {
         return "Colis{" +
-                "number='" + id + '\'' +
+                "id='" + id + '\'' +
                 ", createdDate=" + createdDate +
                 ", status=" + status +
                 '}';

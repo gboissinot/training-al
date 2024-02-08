@@ -4,10 +4,10 @@ public class Main {
 
     //Illustration of DI Pattern (Assemblage)
     public static void main(String[] args) {
-        var userRepository = new InMemoryUserRepository();
+        var userRepository = new InMemoryUserPersistence();
         var userService = new UserService(userRepository); //Uses the DI pattern
         var user = User.of("BOISSINOT", "GREGORY");
-        userService.register(user);
+        userService.create(user);
         System.out.println(userService.get(user));
     }
 }

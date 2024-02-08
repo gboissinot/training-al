@@ -14,6 +14,10 @@ public final class User {
         this.firstname = firstname;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public void changeLastName(String newLastName) {
         this.lastname = newLastName;
     }

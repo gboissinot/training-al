@@ -2,6 +2,6 @@
 - DIP and DI illustration with the repository pattern
 
 ## Notes
-- A Service object uses a registry object through an abstraction (DIP pattern)
-- The repository interface has several implementations : InMemory, Stub, Oracle
-- The chosen implementation is injected (DI) at the wiring step into the Main class
+- The UserService object uses a persistence object through an abstraction (DIP pattern)
+- The UserPersistence interface has several implementations : InMemory, Stub, Oracle
+- The chosen implementation is injected (DI) at the wiring step (into the Main class)

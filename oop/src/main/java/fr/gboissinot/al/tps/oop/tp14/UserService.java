@@ -1,7 +1,5 @@
 package fr.gboissinot.al.tps.oop.tp14;
 
-import java.util.UUID;
-
 final class UserService {
 
     private final UserPersistence userPersistence;
@@ -11,7 +9,7 @@ final class UserService {
     }
 
     void create(CreateUserRequest createUserRequest) {
-        User user = new User(UUID.randomUUID().toString(), createUserRequest.lastname, createUserRequest.firstname);
+        User user = User.of(createUserRequest.lastname, createUserRequest.firstname);
         userPersistence.save(user);
     }
 }
