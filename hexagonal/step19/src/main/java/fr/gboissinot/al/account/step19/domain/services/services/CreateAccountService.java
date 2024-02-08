@@ -1,10 +1,10 @@
-package fr.gboissinot.al.account.step19.application.services;
+package fr.gboissinot.al.account.step19.domain.services.services;
 
-import fr.gboissinot.al.account.step19.application.CreateAccountCommand;
-import fr.gboissinot.al.account.step19.application.events.AccountCreatedApplicationEvent;
-import fr.gboissinot.al.account.step19.domain.Account;
-import fr.gboissinot.al.account.step19.domain.Accounts;
-import fr.gboissinot.al.account.step19.domain.Money;
+import fr.gboissinot.al.account.step19.domain.services.CreateAccountCommand;
+import fr.gboissinot.al.account.step19.domain.services.events.AccountCreatedApplicationEvent;
+import fr.gboissinot.al.account.step19.domain.model.Account;
+import fr.gboissinot.al.account.step19.domain.model.Accounts;
+import fr.gboissinot.al.account.step19.domain.model.Money;
 import fr.gboissinot.al.kernel.CommandHandler;
 import fr.gboissinot.al.kernel.Event;
 import fr.gboissinot.al.kernel.EventDispatcher;

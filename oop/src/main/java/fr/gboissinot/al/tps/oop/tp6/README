@@ -4,4 +4,4 @@
 ## Notes
 - A Service object uses a registry object through an abstraction (DIP pattern)
 - The repository interface has several implementations : InMemory, Stub, Oracle
-- The chosen implementation is injected (DI) at the wiring step in the Main class
+- The chosen implementation is injected (DI) at the wiring step into the Main class

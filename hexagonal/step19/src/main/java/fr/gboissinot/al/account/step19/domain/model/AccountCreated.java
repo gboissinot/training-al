@@ -1,4 +1,4 @@
-package fr.gboissinot.al.account.step19.domain;
+package fr.gboissinot.al.account.step19.domain.model;
 
 import fr.gboissinot.al.kernel.Event;
 

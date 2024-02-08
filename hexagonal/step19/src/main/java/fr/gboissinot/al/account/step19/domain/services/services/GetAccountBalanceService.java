@@ -1,8 +1,8 @@
-package fr.gboissinot.al.account.step19.application.services;
+package fr.gboissinot.al.account.step19.domain.services.services;
 
-import fr.gboissinot.al.account.step19.application.AccountBalanceQuery;
-import fr.gboissinot.al.account.step19.domain.AccountId;
-import fr.gboissinot.al.account.step19.domain.Accounts;
+import fr.gboissinot.al.account.step19.domain.services.AccountBalanceQuery;
+import fr.gboissinot.al.account.step19.domain.model.AccountId;
+import fr.gboissinot.al.account.step19.domain.model.Accounts;
 import fr.gboissinot.al.kernel.QueryHandler;
 
 import java.util.UUID;

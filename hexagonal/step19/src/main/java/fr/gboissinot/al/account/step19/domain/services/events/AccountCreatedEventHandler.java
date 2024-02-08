@@ -1,6 +1,6 @@
-package fr.gboissinot.al.account.step19.application.events;
+package fr.gboissinot.al.account.step19.domain.services.events;
 
-import fr.gboissinot.al.account.step19.application.Notifications;
+import fr.gboissinot.al.account.step19.domain.services.Notifications;
 import fr.gboissinot.al.kernel.EventHandler;
 
 public final class AccountCreatedEventHandler implements EventHandler<AccountCreatedApplicationEvent> {

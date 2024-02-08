@@ -1,15 +1,15 @@
 package fr.gboissinot.al.account.step19;
 
-import fr.gboissinot.al.account.step19.application.AccountBalanceQuery;
-import fr.gboissinot.al.account.step19.application.CreateAccountCommand;
-import fr.gboissinot.al.account.step19.application.SendMoneyCommand;
-import fr.gboissinot.al.account.step19.application.events.AccountCreatedApplicationEvent;
-import fr.gboissinot.al.account.step19.application.events.AccountCreatedEventHandler;
-import fr.gboissinot.al.account.step19.application.events.TransferAcceptedApplicationEvent;
-import fr.gboissinot.al.account.step19.application.events.TransferAcceptedEventHandler;
-import fr.gboissinot.al.account.step19.application.services.CreateAccountService;
-import fr.gboissinot.al.account.step19.application.services.GetAccountBalanceService;
-import fr.gboissinot.al.account.step19.application.services.SendMoneyService;
+import fr.gboissinot.al.account.step19.domain.services.AccountBalanceQuery;
+import fr.gboissinot.al.account.step19.domain.services.CreateAccountCommand;
+import fr.gboissinot.al.account.step19.domain.services.SendMoneyCommand;
+import fr.gboissinot.al.account.step19.domain.services.events.AccountCreatedApplicationEvent;
+import fr.gboissinot.al.account.step19.domain.services.events.AccountCreatedEventHandler;
+import fr.gboissinot.al.account.step19.domain.services.events.TransferAcceptedApplicationEvent;
+import fr.gboissinot.al.account.step19.domain.services.events.TransferAcceptedEventHandler;
+import fr.gboissinot.al.account.step19.domain.services.services.CreateAccountService;
+import fr.gboissinot.al.account.step19.domain.services.services.GetAccountBalanceService;
+import fr.gboissinot.al.account.step19.domain.services.services.SendMoneyService;
 import fr.gboissinot.al.kernel.CommandBus;
 import fr.gboissinot.al.kernel.EventDispatcher;
 import fr.gboissinot.al.kernel.QueryBus;

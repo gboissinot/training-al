@@ -4,6 +4,6 @@ final class MySecondLogger implements Logger {
 
     @Override
     public void log(String message) {
-        System.out.println("[LOG2] - " + message);
+        System.out.println("[SECOND LOG] - " + message);
     }
 }

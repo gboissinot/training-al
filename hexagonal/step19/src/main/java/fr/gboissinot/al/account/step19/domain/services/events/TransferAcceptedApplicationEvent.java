@@ -1,7 +1,7 @@
-package fr.gboissinot.al.account.step19.application.events;
+package fr.gboissinot.al.account.step19.domain.services.events;
 
-import fr.gboissinot.al.account.step19.domain.AccountId;
-import fr.gboissinot.al.account.step19.domain.Money;
+import fr.gboissinot.al.account.step19.domain.model.AccountId;
+import fr.gboissinot.al.account.step19.domain.model.Money;
 import fr.gboissinot.al.kernel.Event;
 
 public final class TransferAcceptedApplicationEvent implements Event {

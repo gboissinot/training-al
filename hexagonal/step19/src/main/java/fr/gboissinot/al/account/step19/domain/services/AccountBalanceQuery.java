@@ -1,4 +1,4 @@
-package fr.gboissinot.al.account.step19.application;
+package fr.gboissinot.al.account.step19.domain.services;
 
 import fr.gboissinot.al.kernel.Query;
 

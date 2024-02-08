@@ -1,11 +1,11 @@
 package fr.gboissinot.al.account.step19;
 
-import fr.gboissinot.al.account.step19.application.events.AccountCreatedEventHandler;
-import fr.gboissinot.al.account.step19.application.events.TransferAcceptedEventHandler;
-import fr.gboissinot.al.account.step19.application.services.CreateAccountService;
-import fr.gboissinot.al.account.step19.application.services.GetAccountBalanceService;
-import fr.gboissinot.al.account.step19.application.services.SendMoneyService;
-import fr.gboissinot.al.account.step19.domain.AccountConfiguration;
+import fr.gboissinot.al.account.step19.domain.services.events.AccountCreatedEventHandler;
+import fr.gboissinot.al.account.step19.domain.services.events.TransferAcceptedEventHandler;
+import fr.gboissinot.al.account.step19.domain.services.services.CreateAccountService;
+import fr.gboissinot.al.account.step19.domain.services.services.GetAccountBalanceService;
+import fr.gboissinot.al.account.step19.domain.services.services.SendMoneyService;
+import fr.gboissinot.al.account.step19.domain.model.AccountConfiguration;
 import fr.gboissinot.al.account.step19.infrastructure.AccountEntityRepository;
 import fr.gboissinot.al.account.step19.infrastructure.JPAAccounts;
 import fr.gboissinot.al.account.step19.infrastructure.LogNotifications;

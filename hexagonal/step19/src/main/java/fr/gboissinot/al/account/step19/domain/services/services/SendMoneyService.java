@@ -1,12 +1,12 @@
-package fr.gboissinot.al.account.step19.application.services;
+package fr.gboissinot.al.account.step19.domain.services.services;
 
-import fr.gboissinot.al.account.step19.application.AccountApplicationException;
-import fr.gboissinot.al.account.step19.application.SendMoneyCommand;
-import fr.gboissinot.al.account.step19.application.events.TransferAcceptedApplicationEvent;
-import fr.gboissinot.al.account.step19.domain.AccountConfiguration;
-import fr.gboissinot.al.account.step19.domain.AccountId;
-import fr.gboissinot.al.account.step19.domain.Accounts;
-import fr.gboissinot.al.account.step19.domain.Money;
+import fr.gboissinot.al.account.step19.domain.services.AccountApplicationException;
+import fr.gboissinot.al.account.step19.domain.services.SendMoneyCommand;
+import fr.gboissinot.al.account.step19.domain.services.events.TransferAcceptedApplicationEvent;
+import fr.gboissinot.al.account.step19.domain.model.AccountConfiguration;
+import fr.gboissinot.al.account.step19.domain.model.AccountId;
+import fr.gboissinot.al.account.step19.domain.model.Accounts;
+import fr.gboissinot.al.account.step19.domain.model.Money;
 import fr.gboissinot.al.kernel.CommandHandler;
 import fr.gboissinot.al.kernel.Event;
 import fr.gboissinot.al.kernel.EventDispatcher;

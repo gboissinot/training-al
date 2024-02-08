@@ -1,6 +1,6 @@
-package fr.gboissinot.al.account.step19.application.services;
+package fr.gboissinot.al.account.step19.domain.services.services;
 
-import fr.gboissinot.al.account.step19.domain.*;
+import fr.gboissinot.al.account.step19.domain.model.*;
 import fr.gboissinot.al.kernel.Event;
 
 import java.util.List;

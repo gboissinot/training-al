@@ -1,8 +1,8 @@
 package fr.gboissinot.al.account.step19;
 
-import fr.gboissinot.al.account.step19.application.AccountBalanceQuery;
-import fr.gboissinot.al.account.step19.application.CreateAccountCommand;
-import fr.gboissinot.al.account.step19.application.SendMoneyCommand;
+import fr.gboissinot.al.account.step19.domain.services.AccountBalanceQuery;
+import fr.gboissinot.al.account.step19.domain.services.CreateAccountCommand;
+import fr.gboissinot.al.account.step19.domain.services.SendMoneyCommand;
 import fr.gboissinot.al.kernel.CommandBus;
 import fr.gboissinot.al.kernel.QueryBus;
 

@@ -1,9 +1,9 @@
 package fr.gboissinot.al.account.step19.infrastructure;
 
-import fr.gboissinot.al.account.step19.domain.Account;
-import fr.gboissinot.al.account.step19.domain.AccountException;
-import fr.gboissinot.al.account.step19.domain.AccountId;
-import fr.gboissinot.al.account.step19.domain.Accounts;
+import fr.gboissinot.al.account.step19.domain.model.Account;
+import fr.gboissinot.al.account.step19.domain.model.AccountException;
+import fr.gboissinot.al.account.step19.domain.model.AccountId;
+import fr.gboissinot.al.account.step19.domain.model.Accounts;
 
 import java.util.HashMap;
 import java.util.Map;

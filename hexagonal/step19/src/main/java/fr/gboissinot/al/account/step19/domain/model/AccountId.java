@@ -1,4 +1,4 @@
-package fr.gboissinot.al.account.step19.domain;
+package fr.gboissinot.al.account.step19.domain.model;
 
 import java.util.Objects;
 import java.util.UUID;

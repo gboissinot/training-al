@@ -2,10 +2,10 @@ package fr.gboissinot.al.account.step19.infrastructure;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import fr.gboissinot.al.account.step19.domain.Account;
-import fr.gboissinot.al.account.step19.domain.AccountException;
-import fr.gboissinot.al.account.step19.domain.AccountId;
-import fr.gboissinot.al.account.step19.domain.Accounts;
+import fr.gboissinot.al.account.step19.domain.model.Account;
+import fr.gboissinot.al.account.step19.domain.model.AccountException;
+import fr.gboissinot.al.account.step19.domain.model.AccountId;
+import fr.gboissinot.al.account.step19.domain.model.Accounts;
 import fr.gboissinot.al.kernel.Event;
 
 import java.util.ArrayList;

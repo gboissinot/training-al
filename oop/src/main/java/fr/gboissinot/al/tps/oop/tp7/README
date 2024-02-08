@@ -2,4 +2,4 @@
 - Invariants illustration
 
 ## Notes
-- Invariants are checked at the creation in the constructor
+- Invariants are checked at the constructor creation time

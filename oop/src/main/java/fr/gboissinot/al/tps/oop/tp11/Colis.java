@@ -6,17 +6,17 @@ import java.util.Objects;
 //Entity
 final class Colis {
 
-    private final ColisNumber number;
+    private final ColisId id;
     private final LocalDateTime createdDate;
     private ColisStatus status;
 
-    private Colis(ColisNumber number, LocalDateTime createdDate, ColisStatus status) {
-        this.number = number;
+    private Colis(ColisId id, LocalDateTime createdDate, ColisStatus status) {
+        this.id = id;
         this.createdDate = createdDate;
         this.status = status;
     }
 
-    public static Colis create(ColisNumber number) {
+    public static Colis create(ColisId number) {
         return new Colis(number, LocalDateTime.now(), ColisStatus.IN_PREPARATION);
     }
 
@@ -26,7 +26,7 @@ final class Colis {
 
     public void cancel() {
         if (this.status != ColisStatus.IN_PREPARATION) {
-            throw new IllegalStateException("Can't cancel a package in preparation");
+            throw new IllegalStateException("Can't cancel a package.");
         }
         this.status = ColisStatus.CANCELED;
     }
@@ -36,18 +36,18 @@ final class Colis {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Colis colis = (Colis) o;
-        return Objects.equals(number, colis.number);
+        return Objects.equals(id, colis.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(number);
+        return Objects.hash(id);
     }
 
     @Override
     public String toString() {
         return "Colis{" +
-                "number='" + number + '\'' +
+                "number='" + id + '\'' +
                 ", createdDate=" + createdDate +
                 ", status=" + status +
                 '}';
